@@ -20,6 +20,7 @@ body {
 
 a {
   color: inherit;
+  /* links will inherit this property and since the text decoration is set to none so no underline  */
   text-decoration: none;
 }
 
@@ -28,25 +29,26 @@ a {
   background: rgba(255, 255, 255, 0.08);
   backdrop-filter: blur(14px);
   -webkit-backdrop-filter: blur(14px);
+  /* only one issue tht backdrop filter uses lot of GPU */
   border: 1px solid rgba(255, 255, 255, 0.12);
   border-radius: 16px;
 }
 
 /* TOP BAR */
 .top-bar {
-  font-size: 0.85rem;
+  font-size: 13.6px;
 }
 .top-inner {
   display: flex;
   justify-content: space-between;
-  padding: 0.4rem 0;
+  padding: 6.4px 0;
 }
 .govt {
   opacity: 0.8;
 }
 .top-links {
   display: flex;
-  gap: 1.2rem;
+  gap: 19.2px;
 }
 
 /* HEADER */
@@ -54,39 +56,39 @@ a {
   position: sticky;
   top: 0;
   z-index: 100;
-  margin: 0.5rem;
+  margin: 8px;
 }
 .header-inner {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 1.5rem;
+  padding: 16px 24px;
 }
 
 /* LOGO */
 .logo {
   display: flex;
   align-items: center;
-  gap: 0.8rem;
+  gap: 12.8px;
 }
 .logo img {
   height: 48px;
 }
 .logo-text span {
-  font-size: 0.8rem;
+  font-size: 12.8px;
   opacity: 0.8;
 }
 /* EVENTS STRIP (HORIZONTAL SCROLL) */
 .events-strip {
-  margin: 2rem 0 1rem;
+  margin: 32px 0 16px;
   padding-left: 5%;
 }
 
 .events-container {
   display: flex;
-  gap: 1.5rem;
+  gap: 24px;
   overflow-x: auto;
-  padding-bottom: 1rem;
+  padding-bottom: 16px;
   scroll-snap-type: x mandatory;
 }
 
@@ -122,16 +124,16 @@ a {
   bottom: 12px;
   left: 12px;
   right: 12px;
-  padding: 1rem;
+  padding: 16px;
 }
 
 .event-overlay h4 {
-  font-size: 1.1rem;
+  font-size: 17.6px;
 }
 
 .event-overlay span {
-  font-size: 0.85rem;
-  opacity: 0.85;
+  font-size: 13.6px;
+  opacity: 13.6px;
 }
 
 /* MOBILE OPTIMIZATION */
@@ -145,7 +147,7 @@ a {
 /* NAV */
 .main-nav {
   display: flex;
-  gap: 1.4rem;
+  gap: 22.4px;
 }
 .main-nav a:hover {
   color: #fbbf24;
@@ -153,28 +155,28 @@ a {
 
 /* HERO */
 .hero {
-  padding: 6rem 0;
+  padding: 96px 0;
   background: linear-gradient(135deg, #000000, #010f2e);
 }
 .hero-box {
-  padding: 3rem;
+  padding: 48px;
   text-align: center;
 }
 .hero h1 {
-  font-size: 2.8rem;
+  font-size: 44.8px;
 }
 .stats {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
-  gap: 1.5rem;
-  margin-top: 2rem;
+  gap: 24px;
+  margin-top: 32px;
 }
 .stat h2 {
   color: #fbbf24;
 }
 /* CAMPUS SHOWCASE */
 .campus-section {
-  margin: 5rem 0;
+  margin: 80px 0;
 }
 
 /* PARALLAX IMAGE */
@@ -197,12 +199,12 @@ a {
 /* OVERLAY */
 .campus-overlay {
   max-width: 420px;
-  padding: 2rem;
+  padding: 32px;
 }
 
 .campus-overlay h2 {
-  font-size: 2rem;
-  margin-bottom: 0.5rem;
+  font-size: 32px;
+  margin-bottom: 8px;
 }
 
 .campus-overlay p {
@@ -217,7 +219,7 @@ a {
 
   .campus-image {
     height: 60vh;
-    padding: 1.5rem;
+    padding: 24px;
   }
 }
 
@@ -226,11 +228,11 @@ a {
 .quick-access {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-  gap: 2rem;
-  margin: 4rem auto;
+  gap: 32px;
+  margin: 64px auto;
 }
 .card {
-  padding: 2rem;
+  padding: 32px;
   transition: transform 0.3s ease;
 }
 .card:hover {
@@ -239,57 +241,57 @@ a {
 
 /* SECTIONS */
 .section {
-  margin: 4rem auto;
+  margin: 64px auto;
 }
 .info-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 1.5rem;
+  gap: 24px;
 }
 .info-card {
-  padding: 2rem;
+  padding: 32px;
 }
 
 /* NEWS */
 .news h2 {
-  margin-bottom: 1.5rem;
+  margin-bottom: 24px;
 }
 .news-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 1.5rem;
+  gap: 24px;
 }
 .news-card {
-  padding: 1.5rem;
+  padding: 24px;
 }
 .tag {
-  font-size: 0.75rem;
+  font-size: 12px;
   color: #fbbf24;
 }
 
 /* FOOTER */
 .footer {
-  margin: 4rem 1rem 1rem;
-  padding: 3rem 0;
+  margin: 64px 16px 16px;
+  padding: 48px 0;
 }
 .footer-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 2rem;
+  gap: 32px;
 }
 .footer a {
   display: block;
-  margin-top: 0.5rem;
+  margin-top: 8px;
   opacity: 0.8;
 }
 .footer a:hover {
   opacity: 1;
 }
 .footer-bottom {
-  margin-top: 2.5rem;
+  margin-top: 40px;
   border-top: 1px solid #1e293b;
-  padding-top: 1rem;
+  padding-top: 16px;
   text-align: center;
-  font-size: 0.8rem;
+  font-size: 10.8px;
   color: #94a3b8;
 }
